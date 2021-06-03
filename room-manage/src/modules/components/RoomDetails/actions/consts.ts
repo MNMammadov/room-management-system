@@ -1,0 +1,3 @@
+export const ROOMS_ACTIONS = {
+    ADD_RESERVATION: "ADD_RESERVATION",
+}

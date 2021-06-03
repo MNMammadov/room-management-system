@@ -1,5 +1,5 @@
 import React from 'react';
-import { IRoom } from '../../models';
+import { IRoom } from '../../../models';
 import moment from 'moment';
 
 import './Room.css';

@@ -1,9 +1,9 @@
 import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@material-ui/core';
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { IRoom } from '../../models';
-import { addReservation } from '../../redux/rooms/actions';
+import { IRoom } from '../../../models';
 import { v4 as uuidv4 } from 'uuid';
+import { addReservation } from './actions';
 
 interface IProps {
     isOpen: boolean;
@@ -14,7 +14,6 @@ interface IProps {
 export const AddReservationModal: React.FC<IProps> = ({ isOpen, onClose, room }) => {
     const dispatch = useDispatch();
     const [reservedBy, setReservedBy] = React.useState('');
-    const [selectedDate, handleDateChange] = React.useState(new Date());
     const [from, setFrom] = React.useState('2021-06-03T11:30');
     const [to, setTo] = React.useState('2021-06-03T12:30');
     const [notes, setNotes] = React.useState('');

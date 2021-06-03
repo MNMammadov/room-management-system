@@ -2,7 +2,7 @@ import moment from "moment";
 import { v4 } from "uuid";
 import { IRoom } from "../models";
 
-export const roomsReservationData: IRoom[] = [
+export const roomsReservations: IRoom[] = [
   {
     id: 1,
     svgAttrs: {
