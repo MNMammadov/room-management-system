@@ -1,0 +1,8 @@
+.room-item {
+    cursor: pointer;
+    fill: red;
+}
+
+.room-item--available {
+    fill: green;
+}
